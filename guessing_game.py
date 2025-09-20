@@ -1,29 +1,44 @@
 import os
 
 def clear_screen():
+              # Cond for eny operating system 
     os.system("cls" if os.name == "nt" else
 "clear")
-
+
+# Clear screen to start with n clean place
 clear_screen()
-secret_word = "skinet"
+
+# The challenge word
+secret_word = "hello"
+
+# Player guessing word in this variable 
 guess = ""
+
+# Number of used hints
 guess_count = 0
+
+# Number of available hints
 guess_limit = 3
+
+# Variable alarm you that player is finished hints
 out_of_guesses = False
 
+# game loop end if win and not win
 while guess != secret_word and not out_of_guesses:
     if guess_count < guess_limit:
-        guess = input("\nenter the word : \n")
+        guess = input("\n enter the word : \n")
         guess_count += 1
     else:
         out_of_guesses = True
     if not guess == secret_word:
-        print("\nwrong word, try again \n")
+        print("\n wrong word, try again \n")
 clear_screen()
+# game over notification 
 if out_of_guesses:
-    print("\nyou lose out of guesses \n")
+    print("\n you lose out of guesses \n")
 else:
-    print("\nyou win, congratulations \n")
+    print("\n you win, congratulations \n")
+
 
 
 
