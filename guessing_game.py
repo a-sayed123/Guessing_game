@@ -39,7 +39,3 @@ def GuessingSecretWord(secret_word, guess_limit):
         print("\n you lose out of guesses \n")
     else:
         print("\n you win, congratulations \n")
-
-
-
-
