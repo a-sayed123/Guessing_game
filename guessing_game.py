@@ -33,6 +33,7 @@ while guess != secret_word and not out_of_guesses:
     if not guess == secret_word:
         print("\n wrong word, try again \n")
 clear_screen()
+
 # game over notification 
 if out_of_guesses:
     print("\n you lose out of guesses \n")
