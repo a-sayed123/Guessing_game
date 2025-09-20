@@ -1,0 +1,5 @@
+This project is a beginning version for this game guessing game,
+It is a game that make player guess the secret word,
+IT IS under development.
+
+Thanks for examining my modest project 
